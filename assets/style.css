@@ -1,0 +1,304 @@
+/* ============================================================
+   Drunken_Butterfly × Airtable Design System
+   基于 airtable-DESIGN.md (alpha 版) 实现
+   ============================================================ */
+
+/* ---------- 画布重置 ---------- */
+.stApp > header {
+    background-color: #ffffff !important;
+}
+
+.stApp {
+    background-color: #ffffff;
+}
+
+/* ---------- 侧边栏 (Airtable 白色面板) ---------- */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #dddddd;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-weight: 500;
+    color: #181d26;
+    letter-spacing: 0;
+}
+
+section[data-testid="stSidebar"] h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+section[data-testid="stSidebar"] h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+/* ---------- 分割线 (Airtable hairline) ---------- */
+section[data-testid="stSidebar"] hr {
+    border-color: #dddddd;
+    margin: 24px 0;
+}
+
+/* ---------- 主按钮 (Airtable button-primary: near-black, 12px rounded) ---------- */
+.stButton > button[kind="primary"],
+.stButton > button[data-testid="baseButton-primary"] {
+    background-color: #181d26 !important;
+    color: #ffffff !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 24px;
+    height: auto;
+    transition: background-color 0.15s ease;
+}
+
+/* Primary Active: #0d1218 */
+.stButton > button[kind="primary"]:active,
+.stButton > button[data-testid="baseButton-primary"]:active {
+    background-color: #0d1218 !important;
+}
+
+/* ---------- 次按钮 (Airtable button-secondary: white canvas, ink text, hairline) ---------- */
+.stButton > button:not([kind="primary"]) {
+    background-color: #ffffff !important;
+    color: #181d26 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    border: 1px solid #dddddd !important;
+    border-radius: 12px;
+    padding: 8px 24px;
+    height: auto;
+}
+
+/* 侧边栏按钮紧凑处理 */
+section[data-testid="stSidebar"] .stButton > button {
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* ---------- 文本输入 (Airtable text-input: 44px, hairline, 6px rounded) ---------- */
+.stTextInput > div > div > input {
+    background-color: #ffffff;
+    color: #181d26;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px 16px;
+    height: 44px;
+}
+
+/* Focus: info-border #458fff */
+.stTextInput > div > div > input:focus {
+    border-color: #458fff;
+    box-shadow: 0 0 0 2px rgba(69, 143, 255, 0.3);
+}
+
+/* ---------- 文件上传 ---------- */
+.stFileUploader > section {
+    border: 1px dashed #dddddd;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    padding: 24px;
+}
+
+/* ---------- 多选 ---------- */
+.stMultiSelect > div > div {
+    border-radius: 6px;
+    border-color: #dddddd;
+}
+
+/* ---------- 正文排版 (Airtable body-md: 14px/400) ---------- */
+body, .stApp, p, li, .stMarkdown {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #333840;
+}
+
+/* ---------- 标题层级 (Airtable typography hierarchy) ---------- */
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: #181d26;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: #181d26;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: 0.12px;
+    color: #181d26;
+    margin-bottom: 12px;
+}
+
+/* ---------- 指标卡片 ---------- */
+[data-testid="stMetricValue"] {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #181d26;
+}
+
+[data-testid="stMetricLabel"] {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #41454d;
+}
+
+/* ---------- 对话消息 ---------- */
+[data-testid="stChatMessage"] {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+}
+
+/* 用户消息底色 surface-soft */
+div[data-testid="stChatMessageContent"]:has(> div > [data-testid="chatAvatarIcon-user"]) {
+    background-color: #f8fafc;
+}
+
+/* 助手消息白色 */
+div[data-testid="stChatMessageContent"]:has(> div > [data-testid="chatAvatarIcon-assistant"]) {
+    background-color: #ffffff;
+}
+
+/* ---------- 数据表格 ---------- */
+.stDataFrame {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stDataFrame table {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+}
+
+.stDataFrame th {
+    background-color: #f8fafc;
+    font-weight: 500;
+    color: #181d26;
+    border-bottom: 1px solid #dddddd;
+}
+
+.stDataFrame td {
+    border-bottom: 1px solid #dddddd;
+    color: #333840;
+}
+
+/* ---------- Tabs ---------- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.stTabs [data-baseweb="tab"] {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #41454d;
+    padding: 8px 24px;
+    border-bottom: 2px solid transparent;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #181d26;
+    border-bottom-color: #181d26;
+}
+
+/* ---------- Expander ---------- */
+.streamlit-expanderHeader {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #181d26;
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+
+/* ---------- 提示框 ---------- */
+.stAlert {
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* ---------- caption 文字 ---------- */
+.stCaption {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: 0.16px;
+    color: #41454d;
+}
+
+/* ---------- 链接 (Airtable text-link) ---------- */
+a {
+    color: #1b61c9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a:active {
+    color: #1a3866;
+}
+
+/* ---------- Chat input ---------- */
+.stChatInput > div > div > input {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+}
+
+/* ---------- 侧边栏内边距 ---------- */
+section[data-testid="stSidebar"] .st-emotion-cache-1gulkj5 {
+    padding: 16px;
+}
+
+/* ---------- 分割间距 ---------- */
+.stDivider {
+    margin: 32px 0;
+}
