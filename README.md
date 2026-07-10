@@ -71,7 +71,6 @@ MYSQL_PASSWORD=your-password
 MYSQL_DATABASE=your-database
 ```
 
-> ⚠️ **注意**：`.env` 包含敏感信息，已被 `.gitignore` 排除，切勿提交到 Git。
 >
 > 💡 环境变量同时兼容旧版变量名 `API_KEY` / `API_BASE_URL` / `MODEL_NAME`。
 
