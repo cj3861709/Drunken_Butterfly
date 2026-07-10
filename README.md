@@ -1,5 +1,14 @@
 <img width="1265" height="642" alt="image" src="https://github.com/user-attachments/assets/eb92177e-8b36-419c-8b69-98b93c6e404a" /># 🦋 Drunken Butterfly
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11%2B-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-1.28%2B-red?logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/LLM-DeepSeek-brightgreen" alt="DeepSeek">
+  <img src="https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Charts-Plotly-3F4F75?logo=plotly&logoColor=white" alt="Plotly">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+</p>
+
 一个基于 LLM 的 AI Agent 助手，支持通过自然语言调用工具完成**数据分析和可视化**任务。
 
 ## ✨ 功能
@@ -22,6 +31,14 @@
 - **💬 对话历史管理** — 对话自动保存到本地，支持**切换 / 新建 / 删除**，对话标题自动生成
 - **🖼️ 图表持久化** — 历史对话中的图表以 JSON 格式保存，重新打开后可正常显示
 - **🎨 Airtable 设计系统** — 基于 Airtable 设计规范的前端 UI 风格（白色画布、深色墨色、干净编辑风）
+
+## 📸 效果预览
+
+> （建议在这里放一张应用运行截图或 GIF，例如 `assets/demo.png`）
+
+<p align="center">
+  <img src="assets/demo.png" alt="Drunken Butterfly 界面预览" width="80%" />
+</p>
 
 ## 🚀 快速开始
 
