@@ -61,7 +61,7 @@ cp .env.example .env
 ```ini
 # LLM API 配置（二选一）
 DEEPSEEK_API_KEY=sk-your-api-key-here
-DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
+DEEPSEEK_BASE_URL=https://api.deepseek.com
 
 # MySQL 数据库配置（按需修改）
 MYSQL_HOST=localhost
