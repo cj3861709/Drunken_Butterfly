@@ -11,6 +11,38 @@
 
 An LLM-powered AI Agent assistant that enables **data analysis and visualization** through natural language, leveraging Tool Calling (Function Calling) for automatic task orchestration.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/excel数据预览.png" alt="Excel Data Preview" width="80%" />
+  <br><em>📊 Load and preview Excel data files</em>
+</p>
+
+<p align="center">
+  <img src="assets/excel提问和分析结果1.png" alt="Excel Data Analysis" width="80%" />
+  <br><em>💬 Ask questions about Excel data, Agent auto-analyzes</em>
+</p>
+
+<p align="center">
+  <img src="assets/excel提问和分析结果2.png" alt="Excel Chart Generation" width="80%" />
+  <br><em>📈 Natural language driven chart generation</em>
+</p>
+
+<p align="center">
+  <img src="assets/mysql提问和分析结果1.png" alt="MySQL Query" width="80%" />
+  <br><em>🗄️ Query MySQL database with natural language</em>
+</p>
+
+<p align="center">
+  <img src="assets/mysql提问和分析结果2.png" alt="MySQL Results" width="80%" />
+  <br><em>📋 Agent executes SQL queries and displays results</em>
+</p>
+
+<p align="center">
+  <img src="assets/mysql提问和可视化结果.png" alt="MySQL Visualization" width="80%" />
+  <br><em>🎨 Query results automatically visualized</em>
+</p>
+
 ## ✨ Features
 
 - **📊 Read Excel/CSV** — Parse `.xlsx` / `.xls` / `.xlsm` / `.xlsb` / `.xltx` / `.xltm` / `.csv` files and return structured summaries

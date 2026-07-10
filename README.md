@@ -34,10 +34,34 @@
 
 ## 📸 效果预览
 
-> （建议在这里放一张应用运行截图或 GIF，例如 `assets/demo.png`）
+<p align="center">
+  <img src="assets/excel数据预览.png" alt="Excel 数据预览" width="80%" />
+  <br><em>📊 加载并预览 Excel 数据文件</em>
+</p>
 
 <p align="center">
-  <img src="assets/demo.png" alt="Drunken Butterfly 界面预览" width="80%" />
+  <img src="assets/excel提问和分析结果1.png" alt="Excel 数据分析对话 1" width="80%" />
+  <br><em>💬 对 Excel 数据提问，Agent 自动分析</em>
+</p>
+
+<p align="center">
+  <img src="assets/excel提问和分析结果2.png" alt="Excel 数据分析对话 2" width="80%" />
+  <br><em>📈 自然语言驱动的图表生成</em>
+</p>
+
+<p align="center">
+  <img src="assets/mysql提问和分析结果1.png" alt="MySQL 查询对话 1" width="80%" />
+  <br><em>🗄️ 对 MySQL 数据库提问</em>
+</p>
+
+<p align="center">
+  <img src="assets/mysql提问和分析结果2.png" alt="MySQL 查询对话 2" width="80%" />
+  <br><em>📋 Agent 自动执行 SQL 查询并展示结果</em>
+</p>
+
+<p align="center">
+  <img src="assets/mysql提问和可视化结果.png" alt="MySQL 数据可视化" width="80%" />
+  <br><em>🎨 查询结果自动生成可视化图表</em>
 </p>
 
 ## 🚀 快速开始
