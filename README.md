@@ -119,7 +119,7 @@ Drunken_Butterfly/
 ├── conversations/         # 对话历史 JSON 文件（自动生成）
 ├── cache.json             # 本地缓存文件（数据源路径、最近文件夹等，自动生成）
 ├── requirements.txt       # 依赖列表
-├── .env                   # 存放 API Key（已忽略，不提交）
+├── .env                   # 存放 API Key（已忽略）
 ├── .env.example           # 环境变量模板
 ├── .gitignore             # 忽略规则
 ├── start.bat              # Windows 一键启动脚本
