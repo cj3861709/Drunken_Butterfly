@@ -1,4 +1,4 @@
-# 🦋 Drunken Butterfly
+<img width="1265" height="642" alt="image" src="https://github.com/user-attachments/assets/eb92177e-8b36-419c-8b69-98b93c6e404a" /># 🦋 Drunken Butterfly
 
 一个基于 LLM 的 AI Agent 助手，支持通过自然语言调用工具完成**数据分析和可视化**任务。
 
@@ -166,6 +166,7 @@ Drunken Butterfly 内置 5 个 LLM 工具，通过 Function Calling 自动编排
 - **干净留白**，无渐变或装饰性背景，强调内容本身
 - **对话气泡卡片** 风格，用户 / 助手 / 系统消息各自区分
 - **侧边栏数据源管理** + **对话历史** 分层布局
+
 
 ## 📄 许可证
 
