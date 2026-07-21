@@ -537,7 +537,8 @@ if user_question:
                 text_answer, figures = ask_question(
                     user_question,
                     file_path=st.session_state.get("selected_file_path"),
-                    data_sources=st.session_state["data_sources"]
+                    data_sources=st.session_state["data_sources"],
+                    history_messages=_get_current_conv().get("messages", [])
                 )
 
                 st.markdown(text_answer)

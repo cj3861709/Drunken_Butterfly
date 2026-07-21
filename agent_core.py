@@ -246,14 +246,17 @@ def _get_data_summary(df: pd.DataFrame, name: str, max_head: int = 3) -> str:
     return "\n".join(parts)
 
 
-def ask_question(question: str, file_path: str = None, data_sources: dict = None):
+def ask_question(question: str, file_path: str = None, data_sources: dict = None,
+                 history_messages: list = None):
     """
-    向 Agent 提问
+    向 Agent 提问（支持多轮对话上下文）
 
     Args:
         question: 用户的问题
         file_path: 当前选中的 Excel 文件路径（可选）
         data_sources: 所有数据源字典 {name: {type, df, content, path, ...}}
+        history_messages: 历史对话消息列表（用于多轮上下文），
+                          每项格式 {"role": "user"|"assistant", "content": "..."}
 
     Returns:
         tuple: (text_answer, list_of_plotly_figures)
@@ -300,7 +303,16 @@ def ask_question(question: str, file_path: str = None, data_sources: dict = None
     )
     messages = [{"role": "system", "content": system_content}]
 
-    # ---------- 组装用户消息 ----------
+    # ---------- 插入历史对话上下文（支持多轮） ----------
+    if history_messages:
+        for h_msg in history_messages:
+            if h_msg.get("role") in ("user", "assistant"):
+                messages.append({
+                    "role": h_msg["role"],
+                    "content": h_msg.get("content", "")
+                })
+
+    # ---------- 组装用户消息（当前问题） ----------
     if context_parts:
         context_msg = "## 当前可用数据源\n\n" + "\n\n".join(context_parts)
         context_msg += f"\n\n## 用户需求\n{question}"
